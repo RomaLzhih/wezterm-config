@@ -3,8 +3,8 @@ local gpu_adapters = require('utils.gpu_adapter')
 local colors = require('colors.custom')
 
 return {
-   animation_fps = 60,
-   max_fps = 60,
+   animation_fps = 120,
+   max_fps = 120,
    front_end = 'WebGpu',
    webgpu_power_preference = 'HighPerformance',
    webgpu_preferred_adapter = gpu_adapters:pick_best(),
@@ -39,10 +39,10 @@ return {
 
    -- window
    window_padding = {
-      left = 5,
-      right = 10,
-      top = 12,
-      bottom = 7,
+      left = 1.5,
+      right = 1.5,
+      top = 0,
+      bottom = 0,
    },
    window_close_confirmation = 'NeverPrompt',
    window_frame = {
@@ -53,5 +53,20 @@ return {
    inactive_pane_hsb = {
       saturation = 0.9,
       brightness = 0.65,
+   },
+   mouse_bindings = {
+      {
+         event = { Down = { streak = 1, button = 'Right' } },
+         mods = 'NONE',
+         action = wezterm.action_callback(function(window, pane)
+            local has_selection = window:get_selection_text_for_pane(pane) ~= ''
+            if has_selection then
+               window:perform_action(act.CopyTo('ClipboardAndPrimarySelection'), pane)
+               window:perform_action(act.ClearSelection, pane)
+            else
+               window:perform_action(act({ PasteFrom = 'Clipboard' }), pane)
+            end
+         end),
+      },
    },
 }
