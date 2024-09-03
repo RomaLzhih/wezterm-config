@@ -41,9 +41,9 @@ local colorscheme = {
       '#C50F1F', -- red
       '#13A10E', -- green
       '#C19C00', -- yellow
-      '#0037DA', -- blue
+      '#81A1C1', -- blue
       '#881798', -- magenta/purple
-      '#3A96DD', -- cyan
+      '#9aafe6', -- cyan
       '#CCCCCC', -- white
    },
    brights = {
