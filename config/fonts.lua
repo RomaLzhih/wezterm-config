@@ -2,11 +2,12 @@ local wezterm = require('wezterm')
 local platform = require('utils.platform')
 
 -- local font = 'JetBrainsMono Nerd Font'
-local font_size = 11
+local font_size = 12
 local font = {
    -- family = "Carto Lisa",
    -- family = "JetBrainsMono NF",
-   family = 'MonoLisa Nerd Font',
+   -- family = 'MonoLisa Nerd Font',
+   family = 'ConsolasLigaturizedV3 Nerd Font',
    harfbuzz_features = {
       'liga',
       'ss02',
@@ -20,7 +21,7 @@ local font = {
 }
 
 -- local italic_font = "CartographCF Nerd Font"
-local italic_font = 'Maple Mono NF'
+local italic_font = 'ConsolasLigaturizedV3 Nerd Font'
 local font_rules = {
    {
       intensity = 'Bold',
