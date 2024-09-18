@@ -21,7 +21,9 @@ local font = {
 }
 
 -- local italic_font = 'CartographCF Nerd Font'
-local italic_font = 'Maple Mono NF'
+-- local italic_font = 'Maple Mono NF'
+local italic_font = 'MonoLisa Nerd Font'
+-- local italic_font = 'Ellograph CF'
 -- local italic_font = 'ConsolasLigaturizedV3 Nerd Font'
 local font_rules = {
    {
@@ -49,6 +51,14 @@ local font_rules = {
          family = italic_font,
          weight = 'Regular',
          style = 'Italic',
+         harfbuzz_features = {
+            'liga',
+            'ss01',
+            'ss02',
+            'ss03',
+            'cv03',
+            'cpsp',
+         },
       }),
    },
 }
