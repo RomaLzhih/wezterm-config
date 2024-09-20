@@ -5,25 +5,25 @@ local platform = require('utils.platform')
 local font_size = 11
 local font = {
    -- family = "Carto Lisa",
-   family = 'JetBrainsMono NF',
-   -- family = 'MonoLisa Nerd Font',
+   -- family = 'JetBrainsMono NF',
+   family = 'MonoLisa Nerd Font',
    -- family = 'ConsolasLigaturizedV3 Nerd Font',
    harfbuzz_features = {
       'liga',
-      -- 'ss02',
-      -- 'ss03', -- alter g
+      'ss02',
+      'ss03', -- alter g
       -- "ss04", -- alter g
-      -- 'ss07',
-      -- 'ss11',
-      -- 'ss12',
-      -- 'ss14',
+      'ss07',
+      'ss11',
+      'ss12',
+      'ss14',
    },
 }
 
 -- local italic_font = 'CartographCF Nerd Font'
--- local italic_font = 'Maple Mono NF'
+local italic_font = 'Maple Mono NF'
 -- local italic_font = 'MonoLisa Nerd Font'
-local italic_font = 'Ellograph CF'
+-- local italic_font = 'Ellograph CF'
 -- local italic_font = 'ConsolasLigaturizedV3 Nerd Font'
 local font_rules = {
    {
@@ -53,7 +53,7 @@ local font_rules = {
          style = 'Italic',
          harfbuzz_features = {
             'liga',
-            'ss01',
+            -- 'ss01',
             'ss02',
             'ss03',
             'cv03',
