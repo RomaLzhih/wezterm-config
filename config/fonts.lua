@@ -5,7 +5,6 @@ local Fira = {
    family = 'FiraCode Nerd Font',
    feature = {
       'liga',
-      'cv01',
       'cv02', -- alter g
       'ss04',
       'ss12',
@@ -16,8 +15,10 @@ local Fira = {
       'cv27',
       'ss06',
    },
-   italic_font = 'Maple Mono NF',
-   italic_weight = 'Regular',
+   -- italic_font = 'Maple Mono NF',
+   italic_font = 'Operator Mono Lig',
+   -- italic_weight = 'Regular',
+   italic_weight = 500,
    italic_feature = {
       'liga',
       'ss02',

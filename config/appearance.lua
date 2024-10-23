@@ -39,8 +39,8 @@ return {
 
    -- window
    window_padding = {
-      left = 1.5,
-      right = 1.5,
+      left = 0,
+      right = 0,
       top = 0,
       bottom = 0,
    },
