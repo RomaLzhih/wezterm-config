@@ -16,7 +16,8 @@ local Fira = {
       'ss06',
    },
    -- italic_font = 'Maple Mono NF',
-   italic_font = 'Operator Mono Lig',
+   -- italic_font = 'Operator Mono Lig',
+   italic_font = 'Dank Mono',
    -- italic_weight = 'Regular',
    italic_weight = 500,
    italic_feature = {
