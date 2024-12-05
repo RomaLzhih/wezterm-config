@@ -2,7 +2,7 @@ local wezterm = require('wezterm')
 local platform = require('utils.platform')
 
 local Fira = {
-   family = 'FiraCode Nerd Font',
+   family = 'Liga SFMono Nerd Font',
    feature = {
       'liga',
       'cv02', -- alter g
