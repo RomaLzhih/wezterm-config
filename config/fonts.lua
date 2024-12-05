@@ -15,18 +15,17 @@ local Fira = {
       'cv27',
       'ss06',
    },
-   -- italic_font = 'Maple Mono NF',
-   -- italic_font = 'Operator Mono Lig',
+   -- italic_font = 'Fisa Code',
    italic_font = 'Dank Mono',
    -- italic_weight = 'Regular',
    italic_weight = 500,
-   italic_feature = {
-      'liga',
-      'ss02',
-      'ss03',
-      'cv03',
-      'cpsp',
-   },
+   -- italic_feature = {
+   --    'liga',
+   --    'ss02',
+   --    'ss03',
+   --    'cv03',
+   --    'cpsp',
+   -- },
 }
 
 local Lisa = {
@@ -40,7 +39,7 @@ local Lisa = {
       'ss12',
       'ss14',
    },
-   italic_font = 'Maple Mono Nerd Font',
+   italic_font = 'Maple Mono NF',
    italic_weight = 'Regular',
    italic_feature = {
       'liga',
