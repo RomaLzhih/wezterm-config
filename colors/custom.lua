@@ -1,12 +1,12 @@
 -- A slightly altered version of catppucchin mocha
 local mocha = {
-   rosewater = '#f5e0dc',
+   rosewater = '#C4B3B0',
    flamingo = '#f2cdcd',
    pink = '#f5c2e7',
    mauve = '#cba6f7',
    red = '#f38ba8',
    maroon = '#eba0ac',
-   peach = '#fab387',
+   peach = '#E1A179',
    yellow = '#f9e2af',
    green = '#a6e3a1',
    teal = '#94e2d5',
