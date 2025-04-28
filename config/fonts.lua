@@ -52,7 +52,7 @@ local Lisa = {
 local default_font = Fira
 
 -- local font = 'JetBrainsMono Nerd Font'
-local font_size = 12
+local font_size = 14
 local font = {
    family = default_font.family,
    harfbuzz_features = default_font.feature,
