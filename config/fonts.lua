@@ -3,6 +3,7 @@ local platform = require('utils.platform')
 
 local general = {
    -- family = 'Code Saver',
+   family = 'InconsolataGo Nerd Font',
    -- family = 'Inconsolata LGC Nerd Font',
    -- family = 'ConsolasLigaturizedV3 Nerd Font',
    -- family = 'OverpassM Nerd Font Mono',
@@ -31,6 +32,7 @@ local MonoLisa = {
 local MonaspaceArgon = {
    family = 'Monaspace Xenon',
    feature = {
+      -- 'cv10',
       'liga',
       'calt',
       'ss01',
@@ -49,10 +51,11 @@ local MonaspaceArgon = {
 local font_size_map = {
    ['Inconsolata'] = 17.0,
    ['Inconsolata LGC Nerd Font'] = 17.0,
+   ['InconsolataGo Nerd Font'] = 17.0,
    ['MonoLisa'] = 13.0,
    ['ConsolasLigaturizedV3 Nerd Font'] = 16.0,
 }
-local default_font = inconsolata
+local default_font = MonaspaceArgon
 
 -- local font = 'JetBrainsMono Nerd Font'
 local font_size = font_size_map[default_font.family] or 14.0
