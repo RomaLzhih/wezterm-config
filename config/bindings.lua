@@ -125,7 +125,8 @@ local keys = {
 
    -- panes: zoom+close pane
    { key = 'Enter', mods = mod.SUPER,     action = act.TogglePaneZoomState },
-   { key = 'w',     mods = mod.SUPER,     action = act.CloseCurrentPane({ confirm = false }) },
+   { key = 'w',     mods = mod.SUPER,     action = act.DisableDefaultAssignment },
+   { key = 'q',     mods = mod.SUPER,     action = act.DisableDefaultAssignment },
 
    -- panes: navigation
    { key = 'k',     mods = mod.SUPER_REV, action = act.ActivatePaneDirection('Up') },
@@ -192,7 +193,7 @@ local mouse_bindings = {
 return {
    -- disable_default_key_bindings = true,
    -- leader = { key = 'Space', mods = mod.SUPER_REV },
-   -- keys = keys,
-   -- key_tables = key_tables,
+   keys = keys,
+   key_tables = key_tables,
    mouse_bindings = mouse_bindings,
 }
